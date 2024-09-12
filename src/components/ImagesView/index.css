@@ -1,0 +1,67 @@
+.question-card-design {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+
+.ques-para {
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 500;
+  color: #164687;
+  margin-bottom: 15px;
+}
+
+.questionline {
+  height: 1px;
+  width: 100%;
+  color: #9797973f;
+  margin-bottom: 15px;
+}
+
+.optionlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-ops {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.button-img-select {
+  border-radius: 8px;
+  border: 2px #263868 solid;
+  height: 100px;
+  width: 320px;
+}
+
+.options-image {
+  height: 100px;
+  width: 320px;
+}
+
+.button-img-unselect {
+  border-radius: 8px;
+  border: 0px;
+  height: 100px;
+  width: 320px;
+}
+
+.next-button {
+  background-color: #164687;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 0px;
+  height: 36px;
+  width: 130px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto;
+  align-self: flex-end;
+}

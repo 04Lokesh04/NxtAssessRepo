@@ -1,0 +1,95 @@
+.result-container {
+  background-color: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.result-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 8px;
+  height: 697px;
+  width: 818px;
+  padding: 20px;
+}
+
+.result-image {
+  height: 364px;
+  width: 484px;
+  margin-bottom: 15px;
+}
+
+.Result-message {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.Result-message2 {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.time-taken-para {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 10px;
+}
+
+.time-taken-para2 {
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.timer-para {
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #164687;
+  margin-bottom: 10px;
+}
+
+.score-para {
+  font-size: 24px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #164687;
+  margin-bottom: 10px;
+}
+
+.score-span {
+  font-size: 48px;
+  font-family: roboto;
+  font-weight: 500;
+  color: #164687;
+  margin-bottom: 20px;
+}
+
+.result-button {
+  background-color: #164687;
+  height: 40px;
+  width: 130px;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}

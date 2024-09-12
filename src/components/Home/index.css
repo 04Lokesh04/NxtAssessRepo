@@ -1,0 +1,76 @@
+.Home-container {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Home-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-card {
+  background-color: #ffffff;
+  height: 566px;
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 0px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 25px;
+  margin-top: 30px;
+}
+
+.home-heading {
+  color: #164687;
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.instrut-list {
+  list-style-type: decimal;
+  color: #475569;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.instruct-para {
+  color: #475569;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.instruct-span {
+  color: #475569;
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.home-image {
+  height: 427px;
+  width: 568px;
+}
+
+.home-button {
+  background-color: #263868;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 8px;
+  height: 44px;
+  width: 171px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 600;
+}
