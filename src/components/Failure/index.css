@@ -39,3 +39,44 @@
   padding: 8px 32px 8px 32px;
   border-radius: 4px 0px 0px 0px;
 }
+
+@media (max-width: 768px) {
+
+  .Failure-card {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .Failure-image {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .Failure-para1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 10px;
+  }
+
+  .Failure-para2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #64748b;
+    margin-bottom: 20px;
+  }
+
+  .Failure-button {
+    width: 100%;
+    max-width: 200px;
+    height: 36px;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+}

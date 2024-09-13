@@ -121,8 +121,8 @@
 .submit-assessment-button {
   position: absolute;
   bottom: 15px;
-  background-color: #164687;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #164687;
   height: 48px;
   width: 90%;
   border: 1px solid #164687;
@@ -131,4 +131,117 @@
   font-family: 'HK Grotesk', sans-serif;
   font-weight: 500;
   margin-left: 20px;
+}
+
+.load-middle {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile view styles */
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .Assessment-container {
+    background-color: #f8fafc;
+    height: auto;
+    width: 100%;
+  }
+
+  .assessment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .question-card {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 590px;
+    width: 100%;
+    order: 1;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    min-height: 494px;
+    width: 100%;
+  }
+
+  .timer-card {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 0px;
+  }
+
+  .time-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .numbers-card {
+    background-color: #ffffff;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .answers-count {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .answers-count-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .count-para1,
+  .count-para2 {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+  }
+
+  .right-lane-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin-bottom: 5px;
+  }
+
+  .submit-assessment-button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
 }

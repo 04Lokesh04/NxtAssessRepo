@@ -35,6 +35,7 @@
 }
 
 .button-img-select {
+  background-color: transparent;
   border-radius: 8px;
   border: 2px #263868 solid;
   height: 100px;
@@ -42,11 +43,12 @@
 }
 
 .options-image {
-  height: 100px;
-  width: 320px;
+  height: 100%;
+  width: 100%;
 }
 
 .button-img-unselect {
+  background-color: transparent;
   border-radius: 8px;
   border: 0px;
   height: 100px;
@@ -64,4 +66,50 @@
   font-weight: 500;
   font-family: Roboto;
   align-self: flex-end;
+}
+
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .question-card-design {
+    height: auto;
+    padding: 10px;
+  }
+
+  .ques-para {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .questionline {
+    margin-bottom: 10px;
+  }
+
+  .optionlist {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .list-ops {
+    margin-bottom: 10px;
+  }
+
+  .button-select,
+  .button-unselect {
+    height: 56px;
+    width: 285px;
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .next-button {
+    height: 32px;
+    width: 114px;
+    max-width: 200px;
+    font-size: 12px;
+    margin-top: 20px;
+    position: relative;
+  }
 }

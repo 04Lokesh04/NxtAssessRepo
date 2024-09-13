@@ -42,9 +42,7 @@ class App extends Component {
       }
     })
 
-    this.setState({score: result}, () => {
-      console.log('app.js', this.state.score)
-    })
+    this.setState({score: result})
   }
 
   updateTimer = (time, answered, unanswered, questions) => {
@@ -114,7 +112,7 @@ class App extends Component {
             )}
           />
           <ProtectedRoute exact path="/results" component={Results} />
-          <Route exact path="/not-found" component={NotFound} />
+          <Route exact path="/bad-path" component={NotFound} />
           <Redirect to="/not-found" />
         </Switch>
       </QuestionsContext.Provider>

@@ -36,9 +36,9 @@ const Result = props => {
                       src="https://res.cloudinary.com/dsbsag3sq/image/upload/v1724060232/Asset_2_1_bj3bby.png"
                       alt="submit"
                     />
-                    <p className="Result-message">
+                    <h1 className="Result-message">
                       Congrats! You completed the assessment.
-                    </p>
+                    </h1>
                     <p className="time-taken-para">
                       Time Taken: <span className="timer-para">{showTime}</span>
                     </p>
@@ -50,7 +50,7 @@ const Result = props => {
                       src="https://res.cloudinary.com/dsbsag3sq/image/upload/v1724060231/calender_1_1_elrmpw.png"
                       alt="time up"
                     />
-                    <p className="Result-message2">Time is up</p>
+                    <h1 className="Result-message2">Time is up</h1>
                     <p className="time-taken-para2">
                       You did not complete the assessment within the time.
                     </p>

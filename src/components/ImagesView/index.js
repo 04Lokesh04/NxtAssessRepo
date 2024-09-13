@@ -6,6 +6,15 @@ class ImagesView extends Component {
     selected: null,
   }
 
+  componentDidMount() {
+    const {questobj} = this.props
+    const selectedOptionId = questobj.selectedOptionIdIs
+
+    if (selectedOptionId) {
+      this.setState({selected: selectedOptionId})
+    }
+  }
+
   selectoneanswer = (optionId, optionsObj, id) => {
     const {markquestionasAnswered} = this.props
     optionsObj.map(each => {

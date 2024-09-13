@@ -28,3 +28,27 @@
   width: 86px;
   margin-right: 35px;
 }
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .nav-img {
+    height: 40px;
+    width: auto;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    width: auto;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+}

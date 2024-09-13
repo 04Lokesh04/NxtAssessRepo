@@ -71,6 +71,7 @@ class Assessment extends Component {
       }
     } catch (err) {
       console.log('error is:', err)
+      this.setState({apistatus: apiConstants.failure})
     }
   }
 
@@ -120,7 +121,12 @@ class Assessment extends Component {
       console.log(answerchoosen)
       const newquestionslist = prevState.questions.map(each =>
         each.id === questionid
-          ? {...each, isanswered: true, choosenCorrect: answerchoosen}
+          ? {
+              ...each,
+              isanswered: true,
+              choosenCorrect: answerchoosen,
+              selectedOptionIdIs: optionId,
+            }
           : {...each},
       )
       return {questions: newquestionslist}

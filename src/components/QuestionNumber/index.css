@@ -14,7 +14,7 @@
   margin-bottom: 10px;
 }
 
-.Ques-nums-list { 
+.Ques-nums-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -61,4 +61,65 @@
   font-size: 14px;
   font-family: Roboto;
   font-weight: 400;
+}
+
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .question-nums-card {
+    height: auto; /* Adjust height to fit content */
+    width: 100%;
+    padding: 10px;
+    box-shadow: none; /* Remove box-shadow for mobile if not needed */
+  }
+
+  .question-nums-para {
+    font-size: 16px; /* Slightly smaller font size for mobile */
+    margin-bottom: 8px; /* Adjust spacing for mobile */
+  }
+
+  .Ques-nums-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping for better fit on small screens */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .question-number-list {
+    list-style-type: none;
+    margin: 0; /* Remove default list margin */
+  }
+
+  .question-num-each {
+    height: 28px; /* Adjust size for mobile */
+    width: 28px;
+    font-size: 12px; /* Smaller font size */
+    margin-right: 8px; /* Adjust spacing */
+    margin-bottom: 8px; /* Adjust spacing */
+    line-height: 28px; /* Center text vertically */
+  }
+
+  .button-highlight {
+    background-color: #eff6ff;
+    color: #64748b;
+    height: 28px; /* Adjust size for mobile */
+    width: 28px;
+    border: 1px #60a5fa solid;
+    border-radius: 4px;
+    font-size: 12px; /* Smaller font size */
+    line-height: 28px; /* Center text vertically */
+  }
+
+  .button-purple {
+    background-color: #7c599f26;
+    color: #64748b;
+    height: 28px; /* Adjust size for mobile */
+    width: 28px;
+    border: 1px #7c599f solid;
+    border-radius: 4px;
+    font-size: 12px; /* Smaller font size */
+    line-height: 28px; /* Center text vertically */
+  }
 }

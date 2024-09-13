@@ -2,9 +2,9 @@ import './index.css'
 import Navbar from '../Navbar'
 
 const Failure = props => {
-  const {getQuestions} = props
+  const {retryfetch} = props
   const retryquestions = () => {
-    getQuestions()
+    retryfetch()
   }
   return (
     <div className="Failure-container">
@@ -15,7 +15,7 @@ const Failure = props => {
           src="https://res.cloudinary.com/dsbsag3sq/image/upload/v1724060231/Group_7519_nh4yyi.png"
           alt="failure view"
         />
-        <p className="Failure-para1">Oops! Something went wrong</p>
+        <h1 className="Failure-para1">Oops! Something Went Wrong</h1>
         <p className="Failure-para2">We are having some trouble</p>
         <button
           className="Failure-button"

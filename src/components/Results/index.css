@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .result-card {
@@ -92,4 +91,75 @@
   border: 0px;
   border-radius: 4px;
   margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .result-container {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .result-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .result-image {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .Result-message,
+  .Result-message2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 10px;
+  }
+
+  .time-taken-para,
+  .time-taken-para2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 10px;
+  }
+
+  .timer-para {
+    font-size: 20px;
+    font-weight: 500;
+    color: #164687;
+    margin-bottom: 10px;
+  }
+
+  .score-para {
+    font-size: 20px;
+    font-weight: 500;
+    color: #164687;
+    margin-bottom: 10px;
+  }
+
+  .score-span {
+    font-size: 32px;
+    font-weight: 500;
+    color: #164687;
+    margin-bottom: 20px;
+  }
+
+  .result-button {
+    width: 100%;
+    max-width: 200px;
+    height: 36px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }

@@ -74,3 +74,54 @@
   bottom: 15px;
   right: 15px;
 }
+
+/* Mobile view style */
+
+@media (max-width: 768px) {
+  .question-card-design {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .ques-para {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .questionline {
+    margin-bottom: 20px;
+  }
+
+  .select-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 50px;
+  }
+
+  .selector-design {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px #263868 solid;
+  }
+
+  .first-option-default {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-top: 55px;
+    position: static;
+    margin-bottom: 50px;
+  }
+
+  .next-button {
+    height: 32px;
+    width: 114px;
+    max-width: 200px;
+    font-size: 12px;
+    margin-top: 20px;
+    position: relative;
+  }
+}

@@ -24,7 +24,7 @@
 .Login-Logo {
   height: 56px;
   width: 98px;
-  margin: 20px;
+  margin-bottom: 30px;
 }
 
 .input-field {
@@ -36,6 +36,7 @@
 .input-field2 {
   display: flex;
   flex-direction: row;
+  width: 84%;
 }
 
 .label-element {
@@ -43,7 +44,7 @@
   font-size: 12px;
   font-weight: 700;
   font-family: Roboto;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .show-password-element {
@@ -51,7 +52,8 @@
   font-size: 14px;
   font-weight: 400;
   font-family: Roboto;
-  margin-left: 23px;
+  margin-left: 10px;
+  margin-top: 2.5px;
 }
 
 .input-element {
@@ -65,7 +67,6 @@
 .checkbox-element {
   height: 16px;
   width: 16px;
-  align-self: flex-start;
 }
 
 .login-button {
@@ -87,4 +88,47 @@
   font-size: 14px;
   font-weight: 400;
   font-family: Roboto;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .Login-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ffffff;
+  }
+  .Login-form {
+    height: 100%; 
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Login-Logo {
+    height: 65px;
+    width: 105px; 
+    margin-bottom: 20px;
+  }
+
+  .input-field{
+    width: 100%;
+  }
+
+  .input-element {
+    width: 100%; 
+  }
+
+  .login-button {
+    width: 100%; 
+    font-size: 16px; 
+  }
+
+  .input-field2 {
+    width: 100%; 
+
+  }
+
+  .show-password-element {
+    margin-left: 5px; 
+    font-size: 12px; 
+  }
 }

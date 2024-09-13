@@ -6,17 +6,28 @@ class DefaultView extends Component {
     selected: null,
   }
 
+  componentDidMount() {
+    const {questobj} = this.props
+    const selectedOptionId = questobj.selectedOptionIdIs
+
+    if (selectedOptionId) {
+      this.setState({selected: selectedOptionId})
+    }
+  }
+
   selectoneanswer = (optionId, optionsObj, id) => {
     const {markquestionasAnswered} = this.props
-    optionsObj.map(each => {
+
+    const updatedOptionsObj = optionsObj.map(each => {
       if (each.optionId === optionId) {
         return {...each, isSelected: true}
       }
       return {...each}
     })
 
-    const selectedOption = optionsObj.find(each => each.optionId === optionId)
-    console.log(selectedOption)
+    const selectedOption = updatedOptionsObj.find(
+      each => each.optionId === optionId,
+    )
     this.setState({selected: optionId})
     markquestionasAnswered(id, selectedOption.optionIsCorrect, optionId)
   }
@@ -30,6 +41,7 @@ class DefaultView extends Component {
     const {selected} = this.state
     const {questobj, count} = this.props
     const {id, questionText, options} = questobj
+
     const optionsObj = options.map(each => ({
       optionId: each.id,
       optionText: each.text,
