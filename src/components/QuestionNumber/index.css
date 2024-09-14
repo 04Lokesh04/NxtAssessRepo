@@ -63,7 +63,6 @@
   font-weight: 400;
 }
 
-
 /* Mobile view styles */
 @media (max-width: 768px) {
   .question-nums-card {

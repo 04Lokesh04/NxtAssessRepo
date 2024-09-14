@@ -99,11 +99,11 @@ class App extends Component {
         }}
       >
         <Switch>
-          <Route path="/login" component={Login} />
-          <ProtectedRoute exact path="/" component={Home} />
+          <Route path='/login' component={Login} />
+          <ProtectedRoute exact path='/' component={Home} />
           <ProtectedRoute
             exact
-            path="/assessment"
+            path='/assessment'
             component={props => (
               <Assessment
                 {...props}
@@ -111,9 +111,9 @@ class App extends Component {
               />
             )}
           />
-          <ProtectedRoute exact path="/results" component={Results} />
-          <Route exact path="/bad-path" component={NotFound} />
-          <Redirect to="/not-found" />
+          <ProtectedRoute exact path='/results' component={Results} />
+          <Route exact path='/bad-path' component={NotFound} />
+          <Redirect to='/not-found' />
         </Switch>
       </QuestionsContext.Provider>
     )

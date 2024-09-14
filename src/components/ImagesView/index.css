@@ -68,7 +68,6 @@
   align-self: flex-end;
 }
 
-
 /* Mobile view styles */
 @media (max-width: 768px) {
   .question-card-design {

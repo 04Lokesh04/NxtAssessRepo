@@ -92,43 +92,42 @@
 
 /* Mobile view styles */
 @media (max-width: 768px) {
-  .Login-container{
+  .Login-container {
     height: 100vh;
     width: 100vw;
     background-color: #ffffff;
   }
   .Login-form {
-    height: 100%; 
+    height: 100%;
     width: 100%;
     padding: 10px;
   }
 
   .Login-Logo {
     height: 65px;
-    width: 105px; 
+    width: 105px;
     margin-bottom: 20px;
   }
 
-  .input-field{
+  .input-field {
     width: 100%;
   }
 
   .input-element {
-    width: 100%; 
+    width: 100%;
   }
 
   .login-button {
-    width: 100%; 
-    font-size: 16px; 
+    width: 100%;
+    font-size: 16px;
   }
 
   .input-field2 {
-    width: 100%; 
-
+    width: 100%;
   }
 
   .show-password-element {
-    margin-left: 5px; 
-    font-size: 12px; 
+    margin-left: 5px;
+    font-size: 12px;
   }
 }

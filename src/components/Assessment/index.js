@@ -107,8 +107,9 @@ class Assessment extends Component {
 
   updateanswerdandunanswerd = () => {
     const {questions} = this.state
-    const answeredCount = questions.filter(each => each.isanswered === true)
-      .length
+    const answeredCount = questions.filter(
+      each => each.isanswered === true,
+    ).length
     const unansweredCount = questions.length - answeredCount
     this.setState({
       answered: answeredCount,
